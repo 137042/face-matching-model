@@ -9,7 +9,7 @@ WORKDIR .
 RUN apt-get update
 RUN apt-get upgrade -y
 RUN pip3 install keras pillow numpy streamlit
-RUN pip3 install --upgrade tensorflow
+RUN pip3 install tensorflow
 
 EXPOSE 8501
 CMD ["streamlit","run" ,"main.py"]
