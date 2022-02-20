@@ -31,7 +31,7 @@ def downloadImgs(target):
     import os
     import urllib.request
 
-    path = "C:/Users/mare/1workspace/python_ex/face-matching-model/crawling/image/" + target
+    path = os.path.abspath(__file__) + "image/" + target
     if not os.path.isdir(path):
         os.makedirs(path)
 
