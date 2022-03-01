@@ -1,57 +1,45 @@
-# face-matching-model
-- 구글에서 특정 동물 사진을 수집 
-- 유저가 업로드한 사진과 가장 흡사한 동물 예측
-- teaching machine을 활용
-- streamlit을 활용한 웹페이지
-- https://share.streamlit.io/gimseonjin/streamlit_kumoh/main/main.py
-## model test
-
-<img width="960" alt="tm_test" src="https://user-images.githubusercontent.com/75469383/154939850-30bfa402-09aa-43d3-9652-8f1135106245.png">
-
-## ngrok test
-
-<img width="960" alt="ngrok_test" src="https://user-images.githubusercontent.com/75469383/154940036-f052ac8f-c4a7-41b1-86a2-743ba1a7acaf.png">
-
-
-
-
 <div align="center">
     <br/>
-    <h1>Application</h1>
-    <p>Official social application developed by Kumoh42.com Operation team.</p><br/>
-    <img src="https://forthebadge.com/images/badges/built-with-love.svg">
-    <img src="https://forthebadge.com/images/badges/fo-real.svg">
-    <br/>
-    <br/>
-    master<br/>
-    <img src="https://semaphoreci.com/api/v1/foryou8033j/kumohtime_v2/branches/master/badge.svg">
-    <br/>
-    <br/>
+    <h1>face matching model</h1>
+    <div>유저가 업로드한 사진과 가장 흡사한 동물을 찾아주는 모델</div>
+    <div>구글에서 특정 동물 사진을 수집하여 teachable machine 학습</div>
+    <div>streamlit을 활용하여 웹페이지 구성</div>
 </div>
+</br>
+</br>
+<img width="960" alt="ngrok_test" src="https://user-images.githubusercontent.com/75469383/154940036-f052ac8f-c4a7-41b1-86a2-743ba1a7acaf.png">
+<hr>
+</br>
 
 #### Development
 <pre class="highlight highlight-html">
-Based on <a href="">Flutter</a> SDK with Dart Language
+Based on <a href="">Python</a> with Google Teachable Machine
 </pre>
 
 #### Requirement
 ```
-Flutter SDK : >=2.1.0 <3.0.0
-Android Dev : Android Studio or Visual Studio Code
-iOS Dev : Android Studio or XCode or Visual Studio Code
+Python : 3.10.1
+- numpy : 1.22.2
+- keras : 2.8.0
+- Pillow : 9.0.1
+- streamlit : 1.5.1
+- tensorflow : 2.8.0
 ```
-
-#### Build Setup
+#### How to run
 <pre class="highlight highlight-html">
-ENG : <a href="https://flutter.dev/docs/get-started/install">https://flutter.dev/docs/get-started/install</a>
-KOR : <a href="https://flutter-ko.dev/docs/get-started/install">https://flutter-ko.dev/docs/get-started/install</a>
+After requirement meeted...
+git clone https://github.com/137042/face-matching-model.git
+streamlit run main.py
+
+or... just try this!
+<a href="https://share.streamlit.io/gimseonjin/streamlit_kumoh/main/main.py">https://share.streamlit.io/gimseonjin/streamlit_kumoh/main/main.py</a>
 </pre>
 
 #### Branch Management
 ```bash
 
 #Branch naming rules
-master
+main
 항상 보호되는 안정된 브랜치
 
 release/1.2.4
